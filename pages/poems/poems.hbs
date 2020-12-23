@@ -1,0 +1,9 @@
+---
+pagination:
+    data: pages
+    size: 1
+    alias: poem
+permalink: "{{ poem.category.slug }}/{{ poem.slug }}/"
+---
+
+{{ poem.body.html }}
