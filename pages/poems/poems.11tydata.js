@@ -7,7 +7,7 @@ module.exports = async () => {
     .map(page => {
         return {
             ...page,
-            html: page.body.html.replace("\n", '<br>'),
+            html: page.body.html.replace(/\n/g, '<br>'),
         };
     })
   ;
