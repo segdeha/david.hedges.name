@@ -1,16 +1,75 @@
 body {
-    font-family: 'Lora', serif;
+  background: white;
+  color: black;
+  font: 16px/1.75 'Lora', serif;
+  margin: 0 auto 1em auto;
+  width: 760px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', sans-serif;
-    font-weight: normal;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+  margin: 1rem 0;
 }
 
 img {
-    display: block;
-    float: right;
-    height: auto;
-    margin: 0 0 1rem 1rem;
-    width: 50%;
+  border: solid 1px silver;
+  display: block;
+  float: right;
+  height: auto;
+  margin: 0 0 1rem 1rem;
+  width: 48%;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+  a:hover {
+  	border-bottom: solid 1px blue;
+  }
+  a:visited {
+  	color: blue;
+  }
+  a.selected {
+  	border-bottom: solid 1px silver;
+  	color: black;
+  }
+
+header {
+  background: url(/assets/img/panorama760x160.jpg) no-repeat;
+  background-size: contain;
+  border-bottom: solid 1px silver;
+  margin-bottom: 3rem;
+  padding-top: 160px;
+  position: relative;
+}
+  header h1 {
+  	background: rgba(255, 255, 255, 0.5);
+  	line-height: 1;
+  	margin: 0;
+  	padding: 0.25rem 0.5rem;
+  	position: absolute;
+  	text-shadow: 0 0 0.5rem white;
+  	top: 0.75rem;
+  	right: 1rem;
+  }
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+    header nav ul li {
+      display: inline-block;
+      margin-right: 1rem;
+    }
+
+main {
+  margin: 0 auto;
+  max-width: 35em;
+  min-width: 25em;
+}
+
+footer {
+  border-top: solid 1px silver;
+  margin-top: 3rem;
 }
