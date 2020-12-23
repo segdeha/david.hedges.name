@@ -1,0 +1,50 @@
+{
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "eslint-config-prettier": "^6.13.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.2",
+    "prettier": "^2.1.2",
+    "serve": "^11.3.2"
+  },
+  "name": "david.hedges.name",
+  "description": "Website of David Hedges, poet, satirist, and rabble rouser from Oregon City, Oregon.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "date-fns": "^2.16.1",
+    "graphql": "^15.3.0",
+    "graphql-request": "^3.2.0",
+    "lodash.keyby": "^4.6.0",
+    "lodash.map": "^4.6.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "scripts": {
+    "build": "eleventy",
+    "build:serve": "npm run build && serve build",
+    "dev": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/segdeha/david.hedges.name.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/segdeha/david.hedges.name/issues"
+  },
+  "homepage": "https://github.com/segdeha/david.hedges.name#readme"
+}
