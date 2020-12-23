@@ -4,4 +4,4 @@
 
 Website of David Hedges, poet, satirist, and rabble rouser from Oregon City, Oregon.
 
-Built using HTML, CSS, and JavaScript in 11ty + GraphCMS and deployed on Netlify.
+Built using HTML, CSS, and JavaScript using [11ty](https://www.11ty.dev) + [GraphCMS](https://graphcms.com) and deployed on [Netlify](https://www.netlify.com).
