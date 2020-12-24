@@ -63,16 +63,16 @@ header {
     top: 0.75rem;
     right: 1rem;
   }
-  header nav ul {
-    list-style: none;
-    padding: 0;
-  }
-    header nav ul li {
-      display: inline-block;
-      margin-right: 1rem;
+    header nav ul {
+      list-style: none;
+      padding: 0;
     }
+      header nav ul li {
+        display: inline-block;
+        margin-right: 1rem;
+      }
 
-main {
+header nav, main, footer p {
   margin: 0 auto;
   max-width: 37em;
   min-width: 25em;
@@ -82,20 +82,18 @@ footer {
   border-top: solid 1px silver;
   margin-top: 3rem;
 }
+  footer p {
+    margin: 1rem auto;
+  }
 
 /* book cover flipper */
 
 .cover {
     float: right;
-    /*height: 675px;*/
-    /*height: 450px;*/
     height: 375px;
-    /*margin: 1rem 0;*/
     margin: 0 0 1rem 2rem;
     perspective: 100rem;
     position: relative;
-    /*width: 450px;*/
-    /*width: 300px;*/
     width: 250px;
 }
     .cover .side {
