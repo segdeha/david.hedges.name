@@ -1,0 +1,15 @@
+---
+layout: layout.hbs
+htmlTitle: Life – david.hedges.name
+pageTitle: Life
+navigation: <ul><li><a href="/">Home</a></li><li><a href="/poems/">Poems</a></li><li><a class="selected" href="/life/">Life</a></li><li><a href="/books/">Books</a></li></ul>
+pagination:
+    data: pages
+    size: 1
+    alias: essay
+permalink: "{{ essay.category.slug }}/{{ essay.slug }}/index.html"
+---
+
+<h2>{{ essay.title }}</h2>
+
+{{ essay.body.html }}

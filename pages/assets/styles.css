@@ -26,14 +26,14 @@ a {
   text-decoration: none;
 }
   a:hover {
-  	border-bottom: solid 1px blue;
+    border-bottom: solid 1px blue;
   }
   a:visited {
-  	color: blue;
+    color: blue;
   }
   a.selected {
-  	border-bottom: solid 1px silver;
-  	color: black;
+    border-bottom: solid 1px silver;
+    color: black;
   }
 
 header {
@@ -45,14 +45,15 @@ header {
   position: relative;
 }
   header h1 {
-  	background: rgba(255, 255, 255, 0.5);
-  	line-height: 1;
-  	margin: 0;
-  	padding: 0.25rem 0.5rem;
-  	position: absolute;
-  	text-shadow: 0 0 0.5rem white;
-  	top: 0.75rem;
-  	right: 1rem;
+    background: rgba(255, 255, 255, 0.5);
+    font-family: 'Lora', serif;
+    line-height: 1;
+    margin: 0;
+    padding: 0.25rem 0.5rem;
+    position: absolute;
+    text-shadow: 0 0 0.5rem white;
+    top: 0.75rem;
+    right: 1rem;
   }
   header nav ul {
     list-style: none;
