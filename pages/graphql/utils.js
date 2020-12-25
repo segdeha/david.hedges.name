@@ -16,11 +16,17 @@ const generatePagesList = pages => {
 
 // defeated, i write a function to add rel="noopener" to all links, sigh
 const addRelNoopener = input => {
-  const rgx = /<a\s{1}/gi;
-  const output = input.replace(rgx, '<a rel="noopener" ');
-  return output;
+  const rgx = /<a\s/gi;
+  return input.replace(rgx, '<a rel="noopener" ');
+};
+
+// lazy load all images
+const addLazyLoading = input => {
+    const rgx = /<img\s/gi;
+    return input.replace(rgx, '<img loading="lazy" ');
 };
 
 exports.convertNewlinesToBreaks = convertNewlinesToBreaks;
 exports.generatePagesList = generatePagesList;
 exports.addRelNoopener = addRelNoopener;
+exports.addLazyLoading = addLazyLoading;
