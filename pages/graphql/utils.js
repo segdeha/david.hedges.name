@@ -14,5 +14,13 @@ const generatePagesList = pages => {
   return list;
 };
 
+// defeated, i write a function to add rel="noopener" to all links, sigh
+const addRelNoopener = input => {
+  const rgx = /<a\s{1}/gi;
+  const output = input.replace(rgx, '<a rel="noopener" ');
+  return output;
+};
+
 exports.convertNewlinesToBreaks = convertNewlinesToBreaks;
 exports.generatePagesList = generatePagesList;
+exports.addRelNoopener = addRelNoopener;
